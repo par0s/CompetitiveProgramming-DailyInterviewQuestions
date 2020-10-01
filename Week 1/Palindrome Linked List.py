@@ -4,8 +4,8 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-        
-class Solution:
+
+class Solution1:
     def isPalindrome(self, head):
         reversed = self.reverseLinked(head)
         res = self.check(head,reversed)

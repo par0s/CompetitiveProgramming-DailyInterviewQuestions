@@ -16,6 +16,8 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
+        if board == []:
+            return 0
         n = len(board)
         m = len(board[0])
         
@@ -40,7 +42,4 @@ class Solution:
         for row in board:
             print(row)
 
-b = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
-s = Solution()        
-s.solve(b)
         

@@ -44,12 +44,7 @@ class Solution:
 
         return arr
 
-s = Solution()
-deadends = ["0201","0101","0102","1212","2002"]
-target = "0202"
-deadends = ["8887","8889","8878","8898","8788","8988","7888","9888"]
-target = "8888"
-deadends = ["0000"]
-target = "8888"
-print(s.openLock(deadends,target))
-# print(s.nextKeys(target))
+
+# list all branches git branch or git branch -r for remote
+# to switch to branch git checkout branch_name
+

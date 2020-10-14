@@ -1,0 +1,29 @@
+void main() {
+  User firstUser = new User("Alan Walker",24);
+  SuperUser secondUser = new SuperUser("Hendrix",35);
+  
+  firstUser.greet();  
+  secondUser.greet();
+}
+
+class User {
+  String username;
+  int age;
+  
+  User(String username,int age){
+    this.username = username;
+    this.age = age;
+  }  
+  
+  void greet(){
+    print("I am " + this.username + " " + this.age.toString());
+  }  
+}
+
+class SuperUser extends User {
+  SuperUser(String username,int age) : super(username,age);
+  
+  void greet(){
+    print("I am Super " + this.username + " " + this.age.toString());
+  }
+}
